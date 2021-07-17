@@ -7,7 +7,7 @@ function App() {
     <div className="App container text-light">
       <Switch>
         <Route path="/" component={CountryList} exact />
-        {/* <Route path="/:country" component={CountryDetails} /> */}
+        <Route path="/:country" component={CountryDetails} />
       </Switch>
     </div>
   );
