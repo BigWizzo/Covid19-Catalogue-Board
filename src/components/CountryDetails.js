@@ -21,8 +21,6 @@ const CountryDetails = () => {
     fetchCountry();
   }, []);
 
-  console.log(country);
-
   return (
     <div>
       <p className="text-success m-3">
