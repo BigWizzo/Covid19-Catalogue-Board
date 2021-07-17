@@ -12,8 +12,8 @@
 
 - React
 - Redux
-- Chartjs
 - Axios
+- Chartjs
 - Persist
 - Bootstrap
 - CSS
