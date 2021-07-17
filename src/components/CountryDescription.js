@@ -18,10 +18,23 @@ const CountryDescription = ({ description }) => (
           </p>
           <p className="mute-p">
             <p className="text-muted">
-              {description?.label} has a population of {description?.population}
-              . It has so far recorded {description?.deaths} deaths.{' '}
-              {description?.confirmed} cases have been confirmed and{' '}
-              {description?.recovered} people have recovered from the virus.
+              {description?.label}
+              {' '}
+              has a population of
+              {description?.population}
+              . It has so far recorded
+              {' '}
+              {description?.deaths}
+              {' '}
+              deaths.
+              {' '}
+              {description?.confirmed}
+              {' '}
+              cases have been confirmed and
+              {' '}
+              {description?.recovered}
+              {' '}
+              people have recovered from the virus.
             </p>
           </p>
         </div>

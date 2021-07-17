@@ -49,7 +49,9 @@ const CountryList = () => {
       if (nat.length > 0 && region.length > 0) {
         return selectByCountry;
       }
+      return selectByCountry;
     }
+    return byCountry;
   };
 
   const filteredCountries = () => {
@@ -61,7 +63,7 @@ const CountryList = () => {
 
   return (
     <div className="main">
-      <h1 className="py-4 text-center">Covid19 Catalogue Board 1</h1>
+      <h1 className="py-4 text-center">Covid19 Catalogue Board</h1>
       <form className="country-form m-auto mb-5">
         <div className="">
           <input
