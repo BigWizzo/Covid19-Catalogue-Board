@@ -91,10 +91,9 @@ const CountryList = () => {
         {countries.loading && <h4 className="text-center">Loading...</h4>}
         <div className="row g-0">
           {filteredCountries().map(
-            (country) =>
-              country.All.country && (
-                <CountryListItem nation={country} key={country.All.country} />
-              ),
+            (country) => country.All.country && (
+            <CountryListItem nation={country} key={country.All.country} />
+            ),
           )}
         </div>
       </div>
