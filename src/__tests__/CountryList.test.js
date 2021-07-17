@@ -2,8 +2,8 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
-import { store, persistor } from '../redux/store';
 import { BrowserRouter } from 'react-router-dom';
+import { store, persistor } from '../redux/store';
 import CountryList from '../components/CountryList';
 
 test('should render the list of all countries', () => {

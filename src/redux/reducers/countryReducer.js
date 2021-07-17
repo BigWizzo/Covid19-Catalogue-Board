@@ -47,7 +47,7 @@ const countryReducer = (state = initialState, action) => {
           abbreviation: payload.abbreviation,
           population: payload.population,
           continent: payload.continent,
-          capital_city: payload.capital_city,
+          capitalCity: payload.capitalCity,
           updated: payload.updated,
         },
       };

@@ -4,26 +4,27 @@ import {
   FETCH_COUNTRIES_SUCCESS,
   FETCH_COUNTRIES_FAILURE,
 } from './actionTypes';
-export const getCountriesData = () => {
-  return async (dispatch) => {
-    try {
-      dispatch({
-        type: FETCH_COUNTRIES_REQUEST,
-      });
-      const response = await axios.get(
-        `https://covid-api.mmediagroup.fr/v1/cases`,
-      );
 
-      const data = Object.values(response.data);
+const getCountriesData = () => async (dispatch) => {
+  try {
+    dispatch({
+      type: FETCH_COUNTRIES_REQUEST,
+    });
+    const response = await axios.get(
+      'https://covid-api.mmediagroup.fr/v1/cases',
+    );
 
-      dispatch({
-        type: FETCH_COUNTRIES_SUCCESS,
-        payload: data,
-      });
-    } catch (error) {
-      dispatch({
-        type: FETCH_COUNTRIES_FAILURE,
-      });
-    }
-  };
+    const data = Object.values(response.data);
+
+    dispatch({
+      type: FETCH_COUNTRIES_SUCCESS,
+      payload: data,
+    });
+  } catch (error) {
+    dispatch({
+      type: FETCH_COUNTRIES_FAILURE,
+    });
+  }
 };
+
+export default getCountriesData;

@@ -2,7 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const CountryListItem = ({ nation }) => {
-  const { country, population, confirmed, recovered, deaths } = nation.All;
+  const {
+    country, population, confirmed, recovered, deaths,
+  } = nation.All;
   return (
     <div className="col-sm-12 col-md-6 col-lg-4">
       <Link className="text-decoration-none" to={country}>
@@ -11,19 +13,35 @@ const CountryListItem = ({ nation }) => {
           <div className="card-body text-dark">
             <p className="card-text">
               <span className="text-success">Population: </span>
-              <span>{population} People</span>
+              <span>
+                {population}
+                {' '}
+                People
+              </span>
             </p>
             <p className="card-text">
               <span className="text-success">confirmed: </span>
-              <span>{confirmed} cases</span>
+              <span>
+                {confirmed}
+                {' '}
+                cases
+              </span>
             </p>
             <p className="card-text">
               <span className="text-success">recovered: </span>
-              <span>{recovered} cases</span>
+              <span>
+                {recovered}
+                {' '}
+                cases
+              </span>
             </p>
             <p className="card-text">
               <span className="text-success">deaths: </span>
-              <span>{deaths} cases</span>
+              <span>
+                {deaths}
+                {' '}
+                cases
+              </span>
             </p>
           </div>
         </div>

@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Pie } from 'react-chartjs-2';
-import { getCountryData } from '../redux/actions/countryActions';
 import { useParams, Link } from 'react-router-dom';
+import getCountryData from '../redux/actions/countryActions';
 import CountryDescription from './CountryDescription';
 
 const CountryDetails = () => {

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getCountriesData } from '../redux/actions/countriesActions';
+import getCountriesData from '../redux/actions/countriesActions';
 import CountryListItem from './CountryListItem';
 
 const reg = [
@@ -87,16 +87,15 @@ const CountryList = () => {
         {countries.loading && <h4 className="text-center">Loading...</h4>}
         <div className="row g-0">
           {filteredCountries().map(
-            (country) =>
-              country.All.country && (
-                <CountryListItem nation={country} key={country.All.country} />
-              ),
+            (country) => country.All.country && (
+            <CountryListItem nation={country} key={country.All.country} />
+            ),
           )}
         </div>
       </div>
-      <div className="circle-small-4 br-50 pos-abs"></div>
-      <div className="circle-small-5 br-50 pos-abs"></div>
-      <div className="circle-small-2 br-50 pos-abs"></div>
+      <div className="circle-small-4 br-50 pos-abs" />
+      <div className="circle-small-5 br-50 pos-abs" />
+      <div className="circle-small-2 br-50 pos-abs" />
     </div>
   );
 };
