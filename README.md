@@ -6,7 +6,7 @@
 > A user types and select a country of interest and a pie chart is presented with information about the country as well as the description of Covid19 recent data.
 > Filtering by country is prioritized over continent.
 
-![ScreenShot](./screenshot.jpg)
+![ScreenShot](./screenshotsa.jpg)
 
 ## Built With
 
