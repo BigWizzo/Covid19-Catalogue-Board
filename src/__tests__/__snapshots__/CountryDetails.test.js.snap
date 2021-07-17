@@ -73,11 +73,10 @@ exports[`should render the country details page 1`] = `
                   className="text-muted"
                 >
                    has a population of
-                   
                   . It has so far recorded
                    
-                   deaths. 
-                   cases have been confirmed and 
+                   deaths.
+                   cases have been confirmed and
                    people have recovered from the virus.
                 </small>
               </p>

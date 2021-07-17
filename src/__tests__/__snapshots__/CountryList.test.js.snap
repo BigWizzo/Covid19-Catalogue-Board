@@ -7,7 +7,7 @@ exports[`should render the list of all countries 1`] = `
   <h1
     className="py-4 text-center"
   >
-    Covid19 Catalogue Board
+    Covid19 Catalogue Board 1
   </h1>
   <form
     className="country-form m-auto mb-5"

@@ -28,38 +28,40 @@ const CountryList = () => {
     fetchCountries();
   }, []);
 
+  const checkCountries = (byCountry) => {
+    if (byCountry.All.country && byCountry.All.continent) {
+      const selectByRegion = Object.values(byCountry.All.continent)
+        .join('')
+        .toLowerCase()
+        .includes(region.toLowerCase());
+
+      const selectByCountry = Object.values(byCountry.All.country)
+        .join('')
+        .toLowerCase()
+        .includes(nat.toLowerCase());
+
+      if (region.length > 0 && nat === '') {
+        return selectByRegion;
+      }
+      if (nat.length > 0 && region === '') {
+        return selectByCountry;
+      }
+      if (nat.length > 0 && region.length > 0) {
+        return selectByCountry;
+      }
+    }
+  };
+
   const filteredCountries = () => {
     if (nat === '' && region === '') {
       return countries;
     }
-    return countries.filter((country) => {
-      if (country.All.country && country.All.continent) {
-        const selectByRegion = Object.values(country.All.continent)
-          .join('')
-          .toLowerCase()
-          .includes(region.toLowerCase());
-
-        const selectByCountry = Object.values(country.All.country)
-          .join('')
-          .toLowerCase()
-          .includes(nat.toLowerCase());
-
-        if (region.length > 0 && nat === '') {
-          return selectByRegion;
-        }
-        if (nat.length > 0 && region === '') {
-          return selectByCountry;
-        }
-        if (nat.length > 0 && region.length > 0) {
-          return selectByCountry;
-        }
-      }
-    });
+    return countries.filter((country) => checkCountries(country));
   };
 
   return (
     <div className="main">
-      <h1 className="py-4 text-center">Covid19 Catalogue Board</h1>
+      <h1 className="py-4 text-center">Covid19 Catalogue Board 1</h1>
       <form className="country-form m-auto mb-5">
         <div className="">
           <input
@@ -87,9 +89,10 @@ const CountryList = () => {
         {countries.loading && <h4 className="text-center">Loading...</h4>}
         <div className="row g-0">
           {filteredCountries().map(
-            (country) => country.All.country && (
-            <CountryListItem nation={country} key={country.All.country} />
-            ),
+            (country) =>
+              country.All.country && (
+                <CountryListItem nation={country} key={country.All.country} />
+              ),
           )}
         </div>
       </div>
