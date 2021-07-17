@@ -1,90 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render the combined components to the App component 1`] = `
-<div
-  className="main"
->
-  <h1
-    className="py-4 text-center"
-  >
-    Covid 19 Board
-  </h1>
-  <form
-    className="country-form m-auto mb-5"
-  >
-    <div
-      className=""
-    >
-      <input
-        className="form-control form-outline"
-        onChange={[Function]}
-        placeholder="Search by Country"
-        type="text"
-        value=""
-      />
-      <select
-        aria-label="Default select example"
-        className="form-select p-2"
-        onChange={[Function]}
-        value=""
-      >
-        <option
-          value="Search by Region"
-        >
-          Search by Region
-        </option>
-        <option
-          value="Africa"
-        >
-          Africa
-        </option>
-        <option
-          value="Europe"
-        >
-          Europe
-        </option>
-        <option
-          value="Asia"
-        >
-          Asia
-        </option>
-        <option
-          value="North America"
-        >
-          North America
-        </option>
-        <option
-          value="South America"
-        >
-          South America
-        </option>
-        <option
-          value="Oceania"
-        >
-          Oceania
-        </option>
-      </select>
-    </div>
-  </form>
-  <div
-    className="content"
-  >
-    <div
-      className="row g-0"
-    />
-  </div>
-  <div
-    className="circle-small-4 br-50 pos-abs"
-  />
-  <div
-    className="circle-small-5 br-50 pos-abs"
-  />
-  <div
-    className="circle-small-2 br-50 pos-abs"
-  />
-</div>
-`;
-
 exports[`should render the list of all countries 1`] = `
 <div
   className="main"
@@ -92,7 +7,7 @@ exports[`should render the list of all countries 1`] = `
   <h1
     className="py-4 text-center"
   >
-    Covid 19 Board
+    Covid19 Catalogue Board
   </h1>
   <form
     className="country-form m-auto mb-5"
