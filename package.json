@@ -2,7 +2,7 @@
   "name": "covid19-catalogue-board",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bigwizzo.github.io/covid19-catalogue-board",
+  "homepage": "https://covid19-catalogue-board.herokuapp.com/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
