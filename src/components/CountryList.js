@@ -59,7 +59,7 @@ const CountryList = () => {
 
   return (
     <div className="main">
-      <h1 className="py-4 text-center">Covid 19 Board</h1>
+      <h1 className="py-4 text-center">Covid19 Catalogue Board</h1>
       <form className="country-form m-auto mb-5">
         <div className="">
           <input

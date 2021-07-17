@@ -25,7 +25,7 @@
 
 ## Check the Live Version
 
-Open [Live Version Link](https://bigwizzo.github.io/covid19-catalogue-board)
+Open [Live Version Link](https://covid19-catalogue-board.herokuapp.com/)
 
 ### Prerequisites
 
