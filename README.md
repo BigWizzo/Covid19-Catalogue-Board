@@ -1,4 +1,4 @@
-# PARANGELMATA APPLICATION
+# COVID19 CATALOGUE BOARD
 
 > This Application visually displays Covid19 data per country using a pie chart.
 > It makes use of Chartjs to show the current confirmed cases, recoveries as well as deaths' data for each given country.
