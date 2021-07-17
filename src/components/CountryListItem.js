@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 const CountryListItem = ({ nation }) => {
@@ -48,6 +49,10 @@ const CountryListItem = ({ nation }) => {
       </Link>
     </div>
   );
+};
+
+CountryListItem.propTypes = {
+  nation: PropTypes.string.isRequired,
 };
 
 export default CountryListItem;
