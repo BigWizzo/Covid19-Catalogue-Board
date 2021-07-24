@@ -16,7 +16,7 @@ const getCountriesData = () => async (dispatch) => {
 
     dispatch(countriesSuccess(data));
   } catch (error) {
-    dispatch(countriesFailure());
+    dispatch(countriesFailure(error));
   }
 };
 

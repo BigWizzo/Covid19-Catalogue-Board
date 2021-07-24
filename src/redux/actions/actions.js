@@ -9,6 +9,21 @@ export const countriesSuccess = (data) => ({
   payload: data,
 });
 
-export const countriesFailure = () => ({
+export const countriesFailure = (error) => ({
   type: types.FETCH_COUNTRIES_FAILURE,
+  payload: error,
+});
+
+export const countryRequest = () => ({
+  type: types.FETCH_COUNTRY_REQUEST,
+});
+
+export const countrySuccess = (data) => ({
+  type: types.FETCH_COUNTRY_SUCCESS,
+  payload: data,
+});
+
+export const countryFailure = (error) => ({
+  type: types.FETCH_COUNTRY_FAILURE,
+  payload: error,
 });

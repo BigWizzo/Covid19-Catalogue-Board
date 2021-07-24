@@ -1,15 +1,9 @@
 import axios from 'axios';
-import {
-  FETCH_COUNTRY_REQUEST,
-  FETCH_COUNTRY_SUCCESS,
-  FETCH_COUNTRY_FAILURE,
-} from './actionTypes';
+import { countryFailure, countryRequest, countrySuccess } from './actions';
 
 const getCountryData = ({ nation }) => async (dispatch) => {
   try {
-    dispatch({
-      type: FETCH_COUNTRY_REQUEST,
-    });
+    dispatch(countryRequest());
     const response = await axios.get(
       `https://covid-api.mmediagroup.fr/v1/cases?country=${nation}`,
     );
@@ -25,9 +19,8 @@ const getCountryData = ({ nation }) => async (dispatch) => {
       updated,
     } = response.data.All;
 
-    dispatch({
-      type: FETCH_COUNTRY_SUCCESS,
-      payload: {
+    dispatch(
+      countrySuccess({
         data: [confirmed, recovered, deaths],
         label: country,
         labels: ['Confirmed', 'Recovered', 'Deaths'],
@@ -40,12 +33,10 @@ const getCountryData = ({ nation }) => async (dispatch) => {
         confirmed,
         recovered,
         deaths,
-      },
-    });
+      }),
+    );
   } catch (error) {
-    dispatch({
-      type: FETCH_COUNTRY_FAILURE,
-    });
+    dispatch(countryFailure(error));
   }
 };
 
