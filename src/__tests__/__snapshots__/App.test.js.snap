@@ -10,7 +10,7 @@ exports[`should render the Covid19-Catalogue-Board Application 1`] = `
     <h1
       className="py-4 text-center"
     >
-      Covid19 Catalogue Board 1
+      Covid19 Catalogue Board
     </h1>
     <form
       className="country-form m-auto mb-5"

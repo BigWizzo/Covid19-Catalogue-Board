@@ -69,16 +69,22 @@ exports[`should render the country details page 1`] = `
               <p
                 className="mute-p"
               >
-                <small
+                <p
                   className="text-muted"
                 >
-                   has a population of
+                   
+                  has a population of
                   . It has so far recorded
                    
-                   deaths.
-                   cases have been confirmed and
-                   people have recovered from the virus.
-                </small>
+                   
+                  deaths.
+                   
+                   
+                  cases have been confirmed and
+                   
+                   
+                  people have recovered from the virus.
+                </p>
               </p>
             </div>
           </div>
