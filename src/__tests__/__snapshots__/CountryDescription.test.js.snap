@@ -21,7 +21,9 @@ exports[`should render the country description component 1`] = `
           </span>
           <span
             className="country-code green-800 font-22"
-          />
+          >
+            AFGHANISTAN
+          </span>
         </p>
         <p
           className="card-text"
@@ -31,27 +33,32 @@ exports[`should render the country description component 1`] = `
           </span>
           <span
             className="card-title"
-          />
+          >
+            AF
+          </span>
         </p>
         <p
           className="mute-p"
         >
-          <p
+          <span
             className="text-muted"
           >
+            Afghanistan
              
             has a population of
+            35530081
             . It has so far recorded
              
+            6357
              
             deaths.
-             
+            143439
              
             cases have been confirmed and
-             
+            82586
              
             people have recovered from the virus.
-          </p>
+          </span>
         </p>
       </div>
     </div>
@@ -60,7 +67,9 @@ exports[`should render the country description component 1`] = `
     >
       <h4
         className="card-hed font-italic"
-      />
+      >
+        Asia
+      </h4>
       <hr />
       <div
         className="card-body"
@@ -88,7 +97,9 @@ exports[`should render the country description component 1`] = `
               </p>
               <p
                 className="font-12 text-success"
-              />
+              >
+                2021/07/24 00:21:36+00
+              </p>
             </div>
           </div>
         </div>

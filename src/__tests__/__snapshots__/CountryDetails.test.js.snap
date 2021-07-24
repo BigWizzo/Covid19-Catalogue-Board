@@ -69,7 +69,7 @@ exports[`should render the country details page 1`] = `
               <p
                 className="mute-p"
               >
-                <p
+                <span
                   className="text-muted"
                 >
                    
@@ -79,12 +79,10 @@ exports[`should render the country details page 1`] = `
                    
                   deaths.
                    
-                   
                   cases have been confirmed and
                    
-                   
                   people have recovered from the virus.
-                </p>
+                </span>
               </p>
             </div>
           </div>

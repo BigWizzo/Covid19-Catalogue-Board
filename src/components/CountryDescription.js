@@ -17,7 +17,7 @@ const CountryDescription = ({ description }) => (
             <span className="card-title">{description?.abbreviation}</span>
           </p>
           <p className="mute-p">
-            <p className="text-muted">
+            <span className="text-muted">
               {description?.label}
               {' '}
               has a population of
@@ -27,15 +27,15 @@ const CountryDescription = ({ description }) => (
               {description?.deaths}
               {' '}
               deaths.
-              {' '}
               {description?.confirmed}
               {' '}
-              cases have been confirmed and
-              {' '}
+              cases have
+              been confirmed and
               {description?.recovered}
               {' '}
-              people have recovered from the virus.
-            </p>
+              people have recovered
+              from the virus.
+            </span>
           </p>
         </div>
       </div>
@@ -61,7 +61,7 @@ const CountryDescription = ({ description }) => (
 );
 
 CountryDescription.propTypes = {
-  description: PropTypes.string.isRequired,
+  description: PropTypes.objectOf(PropTypes.any).isRequired,
 };
 
 export default CountryDescription;
