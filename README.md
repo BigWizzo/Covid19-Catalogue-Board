@@ -62,7 +62,7 @@ To get a local copy up and running follow these simple example steps.
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/BigWizzo/PARANGELMATA-APPLICATION/issues).
+Feel free to check the [issues page](https://github.com/BigWizzo/Covid19-Catalogue-Board/issues).
 
 ## Show your support
 
