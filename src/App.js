@@ -1,7 +1,14 @@
+import { Route, Switch } from 'react-router-dom';
+import CountryList from './components/CountryList';
+import CountryDetails from './components/CountryDetails';
+
 function App() {
   return (
-    <div>
-      <h1>Covid19</h1>
+    <div className="App container text-light">
+      <Switch>
+        <Route path="/" component={CountryList} exact />
+        <Route path="/:country" component={CountryDetails} />
+      </Switch>
     </div>
   );
 }
